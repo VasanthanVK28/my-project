@@ -124,7 +124,10 @@ const Home = () => {
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.3 }}
                     />
-                    <h3 className="font-semibold text-lg text-center">{p.title || p.brand}</h3>
+                    <h3 className="font-semibold text-lg text-center max-w-[200px] truncate">
+  {p.title || p.brand}
+</h3>
+
                     <p className="text-sm text-gray-500 mt-1 text-center">Brand: {p.brand}</p>
                     <p className="text-sm text-gray-500 text-center">
                       Price: <span className="font-bold text-black">{p.price || "N/A"}</span>
